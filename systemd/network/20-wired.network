@@ -1,0 +1,9 @@
+[Match]
+Name=enp2s0
+
+[Network]
+DHCP=yes
+RouteMetric=10
+
+[IPv6AcceptRA]
+RouteMetric=10
