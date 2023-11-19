@@ -12,7 +12,7 @@
 !.etckeeper
 !fstab
 !.gitignore
-!hostname
+!hostnamE
 !hosts
 !locale.gen
 !locale.conf
@@ -24,13 +24,16 @@
 !pacman.d/mirrorlist
 !resolv.conf
 !systemd/
-!systemd/zram-generator.conf
 !systemd/network/
 !systemd/network/20-wired.network
 !systemd/system/
 !systemd/system/enable-console-blanking.service
 !systemd/system/-.slice.d/
 !systemd/system/-.slice.d/override.conf
+!systemd/system/ly.service.d/
+!systemd/system/ly.service.d/override.conf
 !systemd/system/user.slice.d/
 !systemd/system/user.slice.d/override.conf
+!systemd/timesyncd.conf
+!systemd/zram-generator.conf
 !vconsole.conf
