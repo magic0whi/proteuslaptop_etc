@@ -36,4 +36,10 @@
 !systemd/system/user.slice.d/override.conf
 !systemd/timesyncd.conf
 !systemd/zram-generator.conf
+!udev/
+!udev/rules.d/
+!udev/rules.d/50-usb-ssd-trim.rules
+!udev/rules.d/50-backlight.rules
 !vconsole.conf
+!X11/
+!X11/Xwrapper.config
