@@ -27,6 +27,8 @@
 !systemd/network/
 !systemd/network/20-wired.network
 !systemd/network/25-wireless.network
+!systemd/resolved.conf.d/
+!systemd/resolved.conf.d/dns_over_tls.conf
 !systemd/system/
 !systemd/system/enable-console-blanking.service
 !systemd/system/ly.service.d/
@@ -46,3 +48,5 @@
 !vconsole.conf
 !X11/
 !X11/Xwrapper.config
+!X11/xorg.conf.d/
+!X11/xorg.conf.d/10-monitor.conf
