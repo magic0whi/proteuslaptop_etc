@@ -6,23 +6,24 @@
 !dbus-1/system.d/*
 
 # Files Start
-!bluetooth/
-!bluetooth/main.conf
-!crypttab.initramfs
 !.etckeeper
-!fstab
 !.gitignore
-!hostnamE
+!crypttab.initramfs
+!fstab
+!hostname
 !hosts
 !locale.gen
 !locale.conf
 !localtime
 !mkinitcpio.conf
+!resolv.conf
+!vconsole.conf
+!bluetooth/
+!bluetooth/main.conf
 !mkinitcpio.d/
 !mkinitcpio.d/linux.preset
 !pacman.d/
 !pacman.d/mirrorlist
-!resolv.conf
 !systemd/
 !systemd/network/
 !systemd/network/20-wired.network
@@ -45,7 +46,6 @@
 !udev/rules.d/
 !udev/rules.d/50-usb-ssd-trim.rules
 !udev/rules.d/50-backlight.rules
-!vconsole.conf
 !X11/
 !X11/Xwrapper.config
 !X11/xorg.conf.d/
