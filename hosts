@@ -2,5 +2,5 @@
 # See hosts(5) for details.
 127.0.0.1 localhost
 ::1       localhost
-127.0.1.1 PROTEUSMINIPC
+127.0.1.1 PROTEUSNOTEBOOK
 120.233.15.51 ted-payne-4.kucs.xyz

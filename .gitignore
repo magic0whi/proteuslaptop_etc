@@ -2,13 +2,13 @@
 !sudoers.d/
 !sudoers.d/*
 !dbus-1/
-!dbus-1/system.d/
-!dbus-1/system.d/*
 
 # Files Start
 !.etckeeper
 !.gitignore
 !crypttab.initramfs
+!dbus-1/system.d/
+!dbus-1/system.d/iwd-allow-read.conf
 !fstab
 !hostname
 !hosts
@@ -18,10 +18,11 @@
 !mkinitcpio.conf
 !resolv.conf
 !vconsole.conf
-!bluetooth/
-!bluetooth/main.conf
 !mkinitcpio.d/
 !mkinitcpio.d/linux.preset
+!modprobe.d/
+!modprobe.d/i915.conf
+!modprobe.d/nvidia.conf
 !pacman.d/
 !pacman.d/mirrorlist
 !systemd/
@@ -50,3 +51,6 @@
 !X11/Xwrapper.config
 !X11/xorg.conf.d/
 !X11/xorg.conf.d/10-monitor.conf
+!X11/xorg.conf.d/20-intel.conf
+!X11/xorg.conf.d/20-nvidia.conf
+!X11/xorg.conf.d/30-touchpad.conf

@@ -3,20 +3,19 @@
 
 # <file system> <dir> <type> <options> <dump> <pass>
 # /dev/mapper/cryptroot LABEL=arch_os
-UUID=e517f9c4-8f4c-42d5-918e-6ff989dc0a63	/         	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@	0 0
+# /dev/mapper/cryptroot LABEL=arch_os
+UUID=5e2f7a9c-1198-4135-a9c9-a9cf689f531d	/         	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@	0 0
 
-# /dev/nvme0n1p1
-UUID=0C45-AD93      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro,discard	0 2
+# /dev/nvme1n1p1
+UUID=D56B-850D      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro,discard	0 2
 
 # /dev/mapper/cryptroot LABEL=arch_os
-UUID=e517f9c4-8f4c-42d5-918e-6ff989dc0a63	/home     	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@home	0 0
+UUID=5e2f7a9c-1198-4135-a9c9-a9cf689f531d	/home     	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@home	0 0
 
 # /dev/mapper/cryptroot LABEL=arch_os
-UUID=e517f9c4-8f4c-42d5-918e-6ff989dc0a63	/.snapshots	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@snapshots	0 0
+UUID=5e2f7a9c-1198-4135-a9c9-a9cf689f531d	/.snapshots	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@snapshots	0 0
 
 # /dev/mapper/cryptroot LABEL=arch_os
-UUID=e517f9c4-8f4c-42d5-918e-6ff989dc0a63	/var/log  	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@var_log	0 0
+UUID=5e2f7a9c-1198-4135-a9c9-a9cf689f531d	/var/log  	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@var_log	0 0
 
-UUID=8ffa5e20-4a46-4d52-9e90-503b86298620	/mnt/storage1	btrfs		nofail,rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@	0 0
-
-/dev/mapper/cryptswap	none	swap	defaults	0 0
+/.snapshots/swapfile none swap defaults 0 0
