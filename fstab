@@ -20,3 +20,5 @@ UUID=e517f9c4-8f4c-42d5-918e-6ff989dc0a63	/var/log  	btrfs     	rw,relatime,comp
 UUID=8ffa5e20-4a46-4d52-9e90-503b86298620	/mnt/storage1	btrfs		nofail,rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@	0 0
 
 /dev/mapper/cryptswap	none	swap	defaults	0 0
+
+//ARCHVF2/proteusdir /mnt/storage2 cifs _netdev,nofail,username=proteus,password=proteus233 0 0

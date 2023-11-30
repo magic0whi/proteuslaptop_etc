@@ -18,8 +18,6 @@
 !mkinitcpio.conf
 !resolv.conf
 !vconsole.conf
-!bluetooth/
-!bluetooth/main.conf
 !mkinitcpio.d/
 !mkinitcpio.d/linux.preset
 !pacman.d/
