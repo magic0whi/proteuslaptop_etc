@@ -1,0 +1,7 @@
+#%PAM-1.0
+
+auth       sufficient   /lib/security/pam_howdy.so
+auth       include      login
+account    include      login
+password   include      login
+session    include      login
