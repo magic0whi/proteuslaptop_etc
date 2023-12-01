@@ -57,5 +57,3 @@
 !udev/rules.d/50-backlight.rules
 !X11/
 !X11/Xwrapper.config
-!X11/xorg.conf.d/
-!X11/xorg.conf.d/10-monitor.conf
