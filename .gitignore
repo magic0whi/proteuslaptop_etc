@@ -1,14 +1,14 @@
 *
 !sudoers.d/
 !sudoers.d/*
-!dbus-1/
-!dbus-1/system.d/
-!dbus-1/system.d/*
 
 # Files Start
 !.etckeeper
 !.gitignore
 !crypttab.initramfs
+!dbus-1/
+!dbus-1/system.d/
+!dbus-1/system.d/iwd-allow-read.conf
 !fstab
 !hostname
 !hosts
