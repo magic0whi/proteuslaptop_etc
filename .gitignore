@@ -67,7 +67,6 @@
 !X11/
 !X11/Xwrapper.config
 !X11/xorg.conf.d/
-!X11/xorg.conf.d/10-monitor.conf
 !X11/xorg.conf.d/20-intel.conf
 !X11/xorg.conf.d/20-nvidia.conf
 !X11/xorg.conf.d/30-touchpad.conf
