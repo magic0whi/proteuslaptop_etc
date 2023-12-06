@@ -11,7 +11,7 @@
 !clight/modules.conf.d/
 !clight/modules.conf.d/backlight.conf
 !clight/modules.conf.d/daytime.conf
-#!clight/modules.conf.d/dimmer.conf
+!clight/modules.conf.d/dimmer.conf
 !clight/modules.conf.d/dpms.conf
 !clight/modules.conf.d/gamma.conf
 !clight/modules.conf.d/inhibit.conf
