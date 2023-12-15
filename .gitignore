@@ -33,6 +33,8 @@
 !mkinitcpio.d/linux.preset
 !pacman.d/
 !pacman.d/mirrorlist
+!samba/
+!samba/smb.conf
 !systemd/
 !systemd/network/
 !systemd/network/20-wired.network
