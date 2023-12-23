@@ -4,6 +4,8 @@ Name=enp46s0
 [Network]
 DHCP=yes
 RouteMetric=10
+#MACVTAP=macvtap0
+#IPv6AcceptRA=no
 
 [IPv6AcceptRA]
 RouteMetric=10
