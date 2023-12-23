@@ -42,6 +42,9 @@
 !pam.d/login
 !pam.d/ly
 !pam.d/sudo
+!polkit-1/
+!polkit-1/rules.d/
+!polkit-1/rules.d/10-proteus-nekoray.rules
 !samba/
 !samba/smb.conf
 !systemd/
