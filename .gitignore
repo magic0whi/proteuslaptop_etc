@@ -42,6 +42,8 @@
 !pam.d/login
 !pam.d/ly
 !pam.d/sudo
+!samba/
+!samba/smb.conf
 !systemd/
 !systemd/network/
 !systemd/network/20-wired.network
