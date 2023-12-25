@@ -1,0 +1,6 @@
+[Unit]
+Description=Hibernate on low battery level
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sh /etc/systemd/system/lowbat.sh

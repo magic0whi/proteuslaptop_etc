@@ -1,0 +1,10 @@
+[Unit]
+Description=Hibernate on low battery level
+
+[Timer]
+#AccuracySec=1s
+OnActiveSec=5s
+OnUnitActiveSec=1m
+
+[Install]
+WantedBy=timers.target
