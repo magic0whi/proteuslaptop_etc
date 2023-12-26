@@ -4,7 +4,7 @@ if [ -e /usr/bin/nvidia-smi -a -e /usr/bin/xmllint ]; then
     if [ $PIDNUM -ne 0 ]; then
         kill -INT $PIDNUM
         while ps -p $PIDNUM >/dev/null; do sleep 1; done
-        sleep 10
+        sleep 15
     fi
 else
     exit 1

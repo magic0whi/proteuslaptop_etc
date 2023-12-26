@@ -62,6 +62,7 @@
 !systemd/system/lowbat.timer
 !systemd/system/nvidia-kill-app-before-suspend-hibernate.service
 !systemd/system/nvidia-kill-app-before-suspend-hibernate.sh
+!systemd/system/slock@.service
 !systemd/system/ly.service.d/
 !systemd/system/ly.service.d/override.conf
 !systemd/system/systemd-networkd-wait-online.service.d/
