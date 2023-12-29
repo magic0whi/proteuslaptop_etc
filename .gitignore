@@ -5,6 +5,7 @@
 # Files Start
 !.etckeeper
 !.gitignore
+!asound.conf
 !clight/
 !clight/modules.conf.d/
 !clight/modules.conf.d/backlight.conf
@@ -13,7 +14,7 @@
 !clight/modules.conf.d/dpms.conf
 !clight/modules.conf.d/gamma.conf
 !clight/modules.conf.d/inhibit.conf
-!clight/modules.conf.d/keyboard.conf
+#!clight/modules.conf.d/keyboard.conf
 !clight/modules.conf.d/screen.conf
 #!clight/modules.conf.d/sensor.conf
 !crypttab.initramfs
@@ -26,6 +27,7 @@
 !locale.gen
 !locale.conf
 !localtime
+!makepkg.conf
 !mkinitcpio.conf
 !resolv.conf
 !vconsole.conf
@@ -60,7 +62,8 @@
 !systemd/zram-generator.conf
 !udev/
 !udev/rules.d/
-!udev/rules.d/50-usb-ssd-trim.rules
 !udev/rules.d/50-backlight.rules
+!udev/rules.d/50-tas2781-disable-pm.rules
+!udev/rules.d/50-usb-ssd-trim.rules
 !X11/
 !X11/Xwrapper.config

@@ -1,11 +1,9 @@
 [Match]
-Name=enp2s0
+Name=enp197s0f3u1u1
 
 [Network]
-#DHCP=yes
-#RouteMetric=10
-MACVTAP=macvtap0
-IPv6AcceptRA=no
+DHCP=yes
+RouteMetric=10
 
-#[IPv6AcceptRA]
-#RouteMetric=10
+[IPv6AcceptRA]
+RouteMetric=10

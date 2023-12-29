@@ -3,28 +3,18 @@
 
 # <file system> <dir> <type> <options> <dump> <pass>
 # /dev/mapper/cryptroot LABEL=arch_os
-UUID=e517f9c4-8f4c-42d5-918e-6ff989dc0a63 /             btrfs  rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@ 0 0
+# /dev/mapper/cryptroot LABEL=arch_os
+UUID=89209d7b-bde0-4169-b92e-7b1dd3cbe1bf	/         	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@	0 0
+
+# /dev/mapper/cryptroot LABEL=arch_os
+UUID=89209d7b-bde0-4169-b92e-7b1dd3cbe1bf	/home     	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@home	0 0
+
+# /dev/mapper/cryptroot LABEL=arch_os
+UUID=89209d7b-bde0-4169-b92e-7b1dd3cbe1bf	/.snapshots	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@snapshots	0 0
+
+# /dev/mapper/cryptroot LABEL=arch_os
+UUID=89209d7b-bde0-4169-b92e-7b1dd3cbe1bf	/var/log  	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@var_log	0 0
 
 # /dev/nvme0n1p1
-UUID=0C45-AD93                            /boot         vfat   rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro,discard 0 2
+UUID=9523-8B3D      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro,discard	0 2
 
-# /dev/mapper/cryptroot LABEL=arch_os
-UUID=e517f9c4-8f4c-42d5-918e-6ff989dc0a63 /home         btrfs  rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@home 0 0
-
-# /dev/mapper/cryptroot LABEL=arch_os
-UUID=e517f9c4-8f4c-42d5-918e-6ff989dc0a63 /.snapshots   btrfs  rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@snapshots 0 0
-
-# /dev/mapper/cryptroot LABEL=arch_os
-UUID=e517f9c4-8f4c-42d5-918e-6ff989dc0a63 /var/log      btrfs  rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@var_log 0 0
-
-UUID=8ffa5e20-4a46-4d52-9e90-503b86298620 /mnt/storage1	btrfs  nofail,rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@ 0 0
-
-/dev/mapper/cryptswap                     none          swap   defaults 0 0
-
-UUID=6AAC4F4EAC4F13CB                     /mnt/d        ntfs   nofail,rw,nosuid,nodev,user_id=0,group_id=0,allow_other,blksize=4096 0 0
-
-UUID=9A1C56CA1C56A155	                  /mnt/e        ntfs   nofail,rw,nosuid,nodev,user_id=0,group_id=0,allow_other,blksize=4096 0 0
-
-UUID=4E21-0000                            /mnt/storage2 exfat  nofail,rw,nosuid,nodev,relatime,uid=1000,gid=1000,fmask=0022,dmask=0022,iocharset=utf8,errors=remount-ro 0 1
-
-//ARCHVF2/proteusdir                      /mnt/storage2 cifs   _netdev,nofail,username=proteus,password=proteus233 0 0
