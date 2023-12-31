@@ -41,6 +41,8 @@
 !samba/
 !samba/smb.conf
 !systemd/
+!systemd/logind.conf.d/
+!systemd/logind.conf.d/LidSwitchDoesNothing.conf
 !systemd/network/
 !systemd/network/20-macvtap0.netdev
 !systemd/network/20-macvtap0.network

@@ -1,1 +1,0 @@
-ACTION=="add", SUBSYSTEM=="i2c", DRIVERS=="tas2781-hda", ATTRS{name}=="TIAS2781:00", ATTR{power/control}="on"
