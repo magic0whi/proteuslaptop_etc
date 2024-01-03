@@ -65,7 +65,7 @@
 !udev/
 !udev/rules.d/
 !udev/rules.d/50-backlight.rules
-!udev/rules.d/50-tas2781-disable-pm.rules
+!udev/rules.d/50-external-monitor.rules
 !udev/rules.d/50-usb-ssd-trim.rules
 !X11/
 !X11/Xwrapper.config
