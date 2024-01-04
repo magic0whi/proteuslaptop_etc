@@ -10,13 +10,13 @@
 !clight/modules.conf.d/
 !clight/modules.conf.d/backlight.conf
 !clight/modules.conf.d/daytime.conf
-#!clight/modules.conf.d/dimmer.conf
+!clight/modules.conf.d/dimmer.conf
 !clight/modules.conf.d/dpms.conf
 !clight/modules.conf.d/gamma.conf
 !clight/modules.conf.d/inhibit.conf
 #!clight/modules.conf.d/keyboard.conf
 !clight/modules.conf.d/screen.conf
-#!clight/modules.conf.d/sensor.conf
+!clight/modules.conf.d/sensor.conf
 !crypttab.initramfs
 !dbus-1/
 !dbus-1/system.d/
