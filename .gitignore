@@ -37,14 +37,16 @@
 !linux-enable-ir-emitter/pci-0000:c3:00.4-usbv2-0:1:1.2-video-index0_emitter0.driver
 !mkinitcpio.d/
 !mkinitcpio.d/linux.preset
+!mkinitcpio.d/linux-git.preset
 !pacman.d/
 !pacman.d/mirrorlist
 !pam.d/
 !pam.d/ly
+!pam.d/polkit-1
 !pam.d/sudo
 !polkit-1/
 !polkit-1/rules.d/
-!polkit-1/rules.d/10-proteus-nekoray.rules
+!polkit-1/rules.d/40-proteus.rules
 !samba/
 !samba/smb.conf
 !systemd/
