@@ -1,5 +1,5 @@
 polkit.addAdminRule(function(action, subject) {
-    return ["unix-group:proteus"];
+    return ["unix-group:wheel","unix-group:proteus"];
 });
 
 polkit.addRule(function(action, subject) {
