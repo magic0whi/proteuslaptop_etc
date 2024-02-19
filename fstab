@@ -24,10 +24,11 @@ UUID=6AAC4F4EAC4F13CB                     /mnt/d        ntfs  nofail,rw,nosuid,n
 
 UUID=9A1C56CA1C56A155                     /mnt/e        ntfs  nofail,rw,nosuid,nodev,user_id=0,group_id=0,allow_other,blksize=4096 0 0
 
-# /dev/sdb3 LABEL=storage2
-#UUID=0eecfd9c-772c-46d4-9137-33966727e7ea /mnt/storage1 btrfs nofail,rw,relatime,compress=zstd:3,discard=async,space_cache=v2,subvolid=287,subvol=/@ 0 0
 # /dev/nvme0n1p1 LABEL=storage1
 UUID=af7fe924-3168-4268-8617-b4c9867b05d9 /mnt/storage1 btrfs nofail,rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@ 0 0
+
+# /dev/nvme0n1p2 LABEL=tiptime
+UUID=82571fc9-811d-4e1d-8f65-8b4f13f7109a /mnt/storage1/tiptime btrfs nofail,rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@ 0 0
 
 # /dev/sdd1 LABEL=Ventoy
 #UUID=4E21-0000                            /mnt/storage2 exfat nofail,rw,relatime,fmask=0022,dmask=0022,iocharset=utf8,errors=remount-ro 0 1
