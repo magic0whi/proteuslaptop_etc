@@ -31,6 +31,8 @@
 !dbus-1/
 !dbus-1/system.d/
 !dbus-1/system.d/iwd-allow-read.conf
+!edid/
+!edid/yogaair13s_vrr.bin
 !howdy/
 !howdy/config.ini
 !linux-enable-ir-emitter/
