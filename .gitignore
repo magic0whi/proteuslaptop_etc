@@ -25,6 +25,8 @@
 !hosts
 !howdy/
 !howdy/config.ini
+!i2pd/
+!i2pd/i2pd.conf
 !locale.gen
 !locale.conf
 !localtime
@@ -83,3 +85,4 @@
 !X11/xorg.conf.d/20-intel.conf
 !X11/xorg.conf.d/20-nvidia.conf
 !X11/xorg.conf.d/30-touchpad.conf
+!yggdrasil.conf
