@@ -80,3 +80,4 @@
 !udev/rules.d/50-usb-ssd-trim.rules
 !X11/
 !X11/Xwrapper.config
+!yggdrasil.conf
