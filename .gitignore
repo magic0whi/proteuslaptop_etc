@@ -51,6 +51,8 @@
 !polkit-1/rules.d/40-proteus.rules
 !samba/
 !samba/smb.conf
+!sysctl.d/
+!sysctl.d/40-hugepage.conf
 !systemd/
 !systemd/logind.conf.d/
 !systemd/logind.conf.d/LidSwitchDoesNothing.conf
