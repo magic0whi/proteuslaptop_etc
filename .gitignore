@@ -83,4 +83,8 @@
 !udev/rules.d/50-usb-ssd-trim.rules
 !X11/
 !X11/Xwrapper.config
+!X11/xorg.conf.d/
+!X11/xorg.conf.d/00-keyboard.conf
+!X11/xorg.conf.d/20-amdgpu.conf
+!X11/xorg.conf.d/30-touchpad.conf
 !yggdrasil.conf
