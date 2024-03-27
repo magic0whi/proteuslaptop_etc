@@ -34,8 +34,6 @@
 !edid/
 !edid/yogaair13s_vrr.bin
 !edid/oled_vrr.bin
-!fwupd/
-!fwupd/fwupd.conf
 !howdy/
 !howdy/config.ini
 !linux-enable-ir-emitter/
