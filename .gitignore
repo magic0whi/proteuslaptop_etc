@@ -34,6 +34,8 @@
 !edid/
 !edid/yogaair13s_vrr.bin
 !edid/oled_vrr.bin
+!fwupd/
+!fwupd/fwupd.conf
 !howdy/
 !howdy/config.ini
 !linux-enable-ir-emitter/
@@ -81,6 +83,7 @@
 !udev/rules.d/50-backlight.rules
 !udev/rules.d/50-external-monitor.rules
 !udev/rules.d/50-usb-ssd-trim.rules
+!udev/rules.d/99-lowbat.rules
 !X11/
 !X11/Xwrapper.config
 !X11/xorg.conf.d/
