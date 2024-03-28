@@ -3,7 +3,6 @@
 
 # <file system> <dir> <type> <options> <dump> <pass>
 # /dev/mapper/cryptroot LABEL=arch_os
-# /dev/mapper/cryptroot LABEL=arch_os
 UUID=5e2f7a9c-1198-4135-a9c9-a9cf689f531d /             btrfs rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@ 0 0
 
 # /dev/nvme1n1p1
@@ -19,15 +18,6 @@ UUID=5e2f7a9c-1198-4135-a9c9-a9cf689f531d /.snapshots   btrfs rw,relatime,compre
 UUID=5e2f7a9c-1198-4135-a9c9-a9cf689f531d /var/log      btrfs rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@var_log	0 0
 
 /.snapshots/swapfile none swap defaults 0 0
-
-# /dev/nvme0n1p1 LABEL=storage1
-UUID=af7fe924-3168-4268-8617-b4c9867b05d9 /mnt/storage1 btrfs nofail,rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@ 0 0
-
-# /dev/nvme0n1p2 LABEL=tiptime
-UUID=82571fc9-811d-4e1d-8f65-8b4f13f7109a /mnt/ttnode btrfs nofail,rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@ 0 0
-
-# /dev/sdd3 LABEL=storage2
-UUID=0eecfd9c-772c-46d4-9137-33966727e7ea /mnt/storage2 btrfs nofail,rw,relatime,compress=zstd:3,space_cache=v2,subvolid=287,subvol=/@ 0 0
 
 # /dev/md127 LABEL=storage3
 UUID=f804317b-3613-47c7-9d46-ab19be6a88a9 /mnt/storage3 btrfs nofail,rw,relatime,compress=zstd:3,space_cache=v2,subvolid=256,subvol=/@ 0 0
