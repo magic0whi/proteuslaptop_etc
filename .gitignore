@@ -28,6 +28,8 @@
 #!clight/modules.conf.d/keyboard.conf
 !clight/modules.conf.d/screen.conf
 !clight/modules.conf.d/sensor.conf
+!cmdline.d/
+!cmdline.d/root.conf
 !dbus-1/
 !dbus-1/system.d/
 !dbus-1/system.d/iwd-allow-read.conf
@@ -39,8 +41,7 @@
 !linux-enable-ir-emitter/
 !linux-enable-ir-emitter/pci-0000:c3:00.4-usbv2-0:1:1.2-video-index0_emitter0.driver
 !mkinitcpio.d/
-!mkinitcpio.d/linux.preset
-!mkinitcpio.d/linux-git.preset
+!mkinitcpio.d/linux-xanmod.preset
 !pacman.d/
 !pacman.d/mirrorlist
 !pam.d/
