@@ -73,7 +73,6 @@
 !systemd/system/-.slice.d/override.conf
 !systemd/system/user.slice.d/
 !systemd/system/user.slice.d/override.conf
-!systemd/timesyncd.conf
 !systemd/zram-generator.conf
 !udev/
 !udev/rules.d/
