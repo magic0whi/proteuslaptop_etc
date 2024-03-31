@@ -18,13 +18,13 @@
 !clight/modules.conf.d/keyboard.conf
 !clight/modules.conf.d/screen.conf
 !clight/modules.conf.d/sensor.conf
+!cmdline.d/
+!cmdline.d/root.conf
 !dbus-1/system.d/
 !dbus-1/system.d/iwd-allow-read.conf
 !fstab
 !hostname
 !hosts
-!howdy/
-!howdy/config.ini
 !i2pd/
 !i2pd/i2pd.conf
 !locale.gen
