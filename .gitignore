@@ -1,4 +1,6 @@
 *
+!mkinitcpio.d/
+!mkinitcpio.d/*
 !sudoers.d/
 !sudoers.d/*
 !dbus-1/
@@ -33,11 +35,10 @@
 !mkinitcpio.conf
 !resolv.conf
 !vconsole.conf
-!mkinitcpio.d/
-!mkinitcpio.d/linux.preset
 !modprobe.d/
 !modprobe.d/i915.conf
 !modprobe.d/nvidia.conf
+!pacman.conf
 !pacman.d/
 !pacman.d/mirrorlist
 !pam.d/
