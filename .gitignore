@@ -55,12 +55,15 @@
 !systemd/network/20-macvtap0.network
 !systemd/network/20-wired.network
 !systemd/network/25-wireless.network
+!systemd/network/80-iwd.link
 !systemd/resolved.conf.d/
 !systemd/resolved.conf.d/dns_over_tls.conf
 !systemd/system/
 !systemd/system/custom-sleep-actions.service
 !systemd/system/custom-sleep-actions@.service
 !systemd/system/enable-console-blanking.service
+!systemd/system/iwd.service.d/
+!systemd/system/iwd.service.d/override.conf
 !systemd/system/systemd-networkd-wait-online.service.d/
 !systemd/system/systemd-networkd-wait-online.service.d/override.conf
 !systemd/system/-.slice.d/
