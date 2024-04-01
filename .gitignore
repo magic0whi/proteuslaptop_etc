@@ -59,8 +59,6 @@
 !systemd/resolved.conf.d/dns_over_tls.conf
 !systemd/system/
 !systemd/system/enable-console-blanking.service
-!systemd/system/ly.service.d/
-!systemd/system/ly.service.d/override.conf
 !systemd/system/systemd-networkd-wait-online.service.d/
 !systemd/system/systemd-networkd-wait-online.service.d/override.conf
 !systemd/system/-.slice.d/
