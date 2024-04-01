@@ -6,11 +6,10 @@ StopWhenUnneeded=yes
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=-/usr/bin/systemctl stop yggdrasil.service
-ExecStart=-/usr/bin/systemctl stop sing-box.service
-ExecStop=-/usr/bin/iwctl station wlan0 scan
-ExecStop=-/usr/bin/systemctl start yggdrasil.service
-ExecStop=-/usr/bin/systemctl start sing-box.service
+ExecStart=-/usr/bin/systemctl stop sing-box.service yggdrasil.service iwd.service bluetooth.service
+ExecStart=-/usr/bin/rmmod mt7921e
+ExecStop=-/usr/bin/modprobe mt7921e
+ExecStop=-/usr/bin/systemctl start bluetooth.service iwd.service yggdrasil.service sing-box.service
 
 [Install]
 WantedBy=sleep.target
