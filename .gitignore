@@ -58,6 +58,8 @@
 !systemd/resolved.conf.d/
 !systemd/resolved.conf.d/dns_over_tls.conf
 !systemd/system/
+!systemd/system/custom-sleep-actions.service
+!systemd/system/custom-sleep-actions@.service
 !systemd/system/enable-console-blanking.service
 !systemd/system/systemd-networkd-wait-online.service.d/
 !systemd/system/systemd-networkd-wait-online.service.d/override.conf
