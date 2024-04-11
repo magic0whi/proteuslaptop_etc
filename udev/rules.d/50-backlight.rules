@@ -1,4 +1,4 @@
-RUN+="/bin/chgrp video /sys/class/backlight/amdgpu_bl0/brightness"
-RUN+="/bin/chmod g+w /sys/class/backlight/amdgpu_bl0/brightness"
-RUN+="/bin/chgrp video /sys/class/leds/platform::kbd_backlight/brightness"
-RUN+="/bin/chmod g+w /sys/class/leds/platform::kbd_backlight/brightness"
+KERNEL=="amdgpu_bl[0-9]*", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video /sys/class/backlight/amdgpu_bl%n/brightness"
+KERNEL=="amdgpu_bl[0-9]*", SUBSYSTEM=="backlight", RUN+="/bin/chmod g+w /sys/class/backlight/amdgpu_bl%n/brightness"
+KERNEL=="platform::kbd_backlight", SUBSYSTEM=="leds", RUN+="/bin/chgrp video /sys/class/leds/platform::kbd_backlight/brightness"
+KERNEL=="platform::kbd_backlight", SUBSYSTEM=="leds", RUN+="/bin/chmod g+w /sys/class/leds/platform::kbd_backlight/brightness"
