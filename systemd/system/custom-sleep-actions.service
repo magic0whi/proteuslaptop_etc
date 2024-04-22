@@ -7,8 +7,8 @@ StopWhenUnneeded=yes
 Type=oneshot
 RemainAfterExit=yes
 ExecStart=-/usr/bin/systemctl stop sing-box.service yggdrasil.service iwd.service bluetooth.service
-ExecStart=-/usr/bin/rmmod mt7921e
-ExecStop=-/usr/bin/modprobe mt7921e
+ExecStart=-/usr/bin/modprobe -r mt7921e btusb snd_hda_scodec_tas2781_i2c snd_soc_tas2781_fmwlib snd_soc_tas2781_comlib thunderbolt
+ExecStop=-/usr/bin/modprobe mt7921e; /usr/bin/modprobe btusb; /usr/bin/modprobe snd_hda_scodec_tas2781_i2c; /usr/bin/modprobe thunderbolt
 ExecStop=-/usr/bin/systemctl start bluetooth.service iwd.service yggdrasil.service sing-box.service
 
 [Install]
