@@ -62,6 +62,14 @@
 !systemd/system/-.slice.d/override.conf
 !systemd/system/user.slice.d/
 !systemd/system/user.slice.d/override.conf
+!systemd/system/xmrig.service
+!systemd/system/xmrig.timer
+!systemd/system/xmrig-stop.service
+!systemd/system/xmrig-stop.timer
+!systemd/system/miner@.service
+!systemd/system/miner@.timer
+!systemd/system/miner-stop@.service
+!systemd/system/miner-stop@.timer
 !systemd/zram-generator.conf
 !udev/
 !udev/rules.d/
