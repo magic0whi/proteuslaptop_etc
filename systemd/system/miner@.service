@@ -1,0 +1,7 @@
+[Unit]
+Description=Multi currency GPU miner
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/miner --algo kawpow --ssl 1 --server us-rvn.2miners.com --port 16060 --user rMsaChs724shRfm4A7mDi1oRFeWaZFRncP.114514
+User=%i

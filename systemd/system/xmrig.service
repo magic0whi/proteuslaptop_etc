@@ -1,0 +1,6 @@
+[Unit]
+Description=RandomX, KawPow, CryptoNight, AstroBWT and GhostRider unified CPU/GPU miner and RandomX benchmark
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/xmrig -c /etc/xmrig/xmrig.conf

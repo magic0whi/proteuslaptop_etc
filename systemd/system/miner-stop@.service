@@ -1,0 +1,8 @@
+[Unit]
+Description=Stop GPU miner for miner@%i.service
+After=network.target
+Conflicts=miner@%i.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/true

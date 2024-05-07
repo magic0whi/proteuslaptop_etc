@@ -1,0 +1,9 @@
+[Unit]
+Description=Stop GPU miner for miner@%i.service
+
+[Timer]
+OnCalendar=*-*-* 6:00:00
+Unit=miner-stop@%i.service
+
+[Install]
+WantedBy=timers.target
