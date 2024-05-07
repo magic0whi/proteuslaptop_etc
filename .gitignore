@@ -70,6 +70,10 @@
 !systemd/system/-.slice.d/override.conf
 !systemd/system/user.slice.d/
 !systemd/system/user.slice.d/override.conf
+!systemd/system/xmrig-stop.service
+!systemd/system/xmrig-stop.timer
+!systemd/system/xmrig.service
+!systemd/system/xmrig.timer
 !systemd/timesyncd.conf
 !systemd/zram-generator.conf
 !udev/
