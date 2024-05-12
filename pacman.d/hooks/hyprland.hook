@@ -1,0 +1,13 @@
+[Trigger]
+Operation=Install
+Operation=Upgrade
+Type=Package
+Target=hyprland
+Target=hyprland-git
+
+[Action]
+Description=Stop hyprland-session.target while Hyprland is terminate or crash
+Depends=sed
+When=PostTransaction
+NeedsTargets
+Exec=/bin/sed -i 's/Exec=Hyprland$/\0;systemctl --user stop graphical-session.target/' /usr/share/wayland-sessions/hyprland.desktop

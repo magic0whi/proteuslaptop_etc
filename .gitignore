@@ -41,6 +41,8 @@
 !mkinitcpio.d/*
 !pacman.d/
 !pacman.d/mirrorlist
+!pacman.d/hooks
+!pacman.d/hooks/*
 !samba/
 !samba/smb.conf
 !sudoers.d/
