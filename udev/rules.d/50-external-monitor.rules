@@ -1,1 +1,0 @@
-ACTION=="change", SUBSYSTEM=="drm", RUN+="/bin/su proteus -c='env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID/bus systemctl --user reload bspwm.service'"
