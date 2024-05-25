@@ -2,6 +2,7 @@
 # Files Start
 !.etckeeper
 !.gitignore
+!asound.conf
 !crypttab.initramfs
 !fstab
 !hostname
