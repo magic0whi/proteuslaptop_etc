@@ -3,4 +3,6 @@ Description=RandomX, KawPow, CryptoNight, AstroBWT and GhostRider unified CPU/GP
 After=network.target
 
 [Service]
+ExecStartPre=sh -c '/usr/bin/sysctl vm.nr_hugepages=$(($(/usr/bin/sysctl -n vm.nr_hugepages)+512))'
 ExecStart=/usr/bin/xmrig -c /etc/xmrig/xmrig-work.conf
+ExecStop=sh -c '/usr/bin/sysctl vm.nr_hugepages=$(($(/usr/bin/sysctl -n vm.nr_hugepages)-512))'
