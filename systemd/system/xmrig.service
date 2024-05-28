@@ -3,4 +3,4 @@ Description=RandomX, KawPow, CryptoNight, AstroBWT and GhostRider unified CPU/GP
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/xmrig -c /etc/xmrig/xmrig.conf
+ExecStart=/usr/bin/xmrig -c /etc/xmrig/xmrig-work.conf
