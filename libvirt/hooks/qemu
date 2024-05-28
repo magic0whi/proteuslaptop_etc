@@ -1,0 +1,14 @@
+#!/bin/sh
+DumpedXML=$(cat)
+CurrentHugepages=$(sysctl -n vm.nr_hugepages)
+RequiredHugepages=$(printf '%.0f' $(( ($(xmllint --xpath '/domain/memory[@unit="KiB"]/text()' - <<< "$DumpedXML") + 2047) / 2048 )))
+
+xmllint --xpath '/domain/memoryBacking/hugepages' - <<< "$DumpedXML" > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    if [ "$2" = 'prepare' ] && [ "$3" = 'begin' ]; then
+        sysctl vm.nr_hugepages=$(($CurrentHugepages + $RequiredHugepages))
+    elif [ "$2" = 'release' ] && [ "$3" = 'end' ]; then
+        sysctl vm.nr_hugepages=$(($CurrentHugepages - $RequiredHugepages))
+    fi
+fi
+    

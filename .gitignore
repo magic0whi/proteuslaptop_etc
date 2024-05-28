@@ -38,6 +38,9 @@
 !hosts
 !i2pd/
 !i2pd/i2pd.conf
+!libvirt/
+!libvirt/hooks/
+!libvirt/hooks/qemu
 !ly/
 !ly/wsetup.sh
 !mkinitcpio.d/
@@ -61,12 +64,12 @@
 !systemd/resolved.conf.d/
 !systemd/resolved.conf.d/*
 !systemd/system/
+!systemd/system/custom-sleep-actions.service
+!systemd/system/custom-sleep-actions.sh
 !systemd/system/enable-console-blanking.service
 !systemd/system/lowbat.service
 !systemd/system/lowbat.sh
 !systemd/system/lowbat.timer
-!systemd/system/nvidia-kill-app-before-suspend-hibernate.service
-!systemd/system/nvidia-kill-app-before-suspend-hibernate.sh
 !systemd/system/ly.service.d/
 !systemd/system/ly.service.d/override.conf
 !systemd/system/smb.service.d/

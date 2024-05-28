@@ -4,3 +4,4 @@ After=network.target
 
 [Service]
 ExecStart=/usr/bin/xmrig -c /etc/xmrig/xmrig.conf
+ExecStop=/bin/sh -c '/usr/bin/sysctl vm.nr_hugepages=$(($(/usr/bin/sysctl -n vm.nr_hugepages) - 1180))'

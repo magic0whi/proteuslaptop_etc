@@ -1,0 +1,12 @@
+[Unit]
+Description=Do some actions before sleep
+Before=sleep.target
+StopWhenUnneeded=yes
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/sh /etc/systemd/system/custom-sleep-actions.sh
+
+[Install]
+WantedBy=sleep.target
