@@ -62,6 +62,8 @@
 !systemd/system/custom-sleep-actions.service
 !systemd/system/custom-sleep-actions@.service
 !systemd/system/enable-console-blanking.service
+!systemd/system/maa@.service
+!systemd/system/maa@.timer
 !systemd/system/iwd.service.d/
 !systemd/system/iwd.service.d/override.conf
 !systemd/system/ly.service.d/
