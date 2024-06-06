@@ -72,6 +72,8 @@
 !systemd/system/lowbat.timer
 !systemd/system/ly.service.d/
 !systemd/system/ly.service.d/override.conf
+!systemd/system/maa@.service
+!systemd/system/maa@.timer
 !systemd/system/smb.service.d/
 !systemd/system/smb.service.d/override.conf
 !systemd/system/systemd-networkd-wait-online.service.d/
