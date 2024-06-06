@@ -2,8 +2,8 @@
 Description=Run GPU miner for miner@%i.service
 
 [Timer]
-OnCalendar=*-*-* 21:00:00
 Unit=miner@%i.service
+OnCalendar=*-*-* 21:00:00
 
 [Install]
 WantedBy=timers.target
