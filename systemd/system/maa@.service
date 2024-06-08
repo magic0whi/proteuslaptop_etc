@@ -6,5 +6,5 @@ After=network.target waydroid-container.service
 [Service]
 User=%i
 ExecStartPre=/usr/bin/sh -c 'DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u %i)/bus XDG_RUNTIME_DIR=/run/user/$(id -u %i) WAYLAND_DISPLAY=wayland-1 waydroid session stop'
-ExecStart=/usr/bin/sh -c 'export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u %i)/bus XDG_RUNTIME_DIR=/run/user/$(id -u %i) WAYLAND_DISPLAY=wayland-1; nohup waydroid session start > /tmp/waydroid.log 2>&1 & while [ -z "$(cat /tmp/waydroid.log | grep -P -- Android\\ with\\ user\\ [0-9]+\\ is\\ ready)" ]; do sleep 1; done; waydroid app launch com.hypergryph.arknights && maa startup Official -p defaults && maa run infrast -p defaults && maa run collect -p defaults && maa fight '1-7' -p defaults; waydroid session stop'
+ExecStart=/usr/bin/sh -c 'export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u %i)/bus XDG_RUNTIME_DIR=/run/user/$(id -u %i) WAYLAND_DISPLAY=wayland-1; nohup waydroid session start > /tmp/waydroid.log 2>&1 & while [ -z "$(cat /tmp/waydroid.log | grep -P -- Android\\ with\\ user\\ [0-9]+\\ is\\ ready)" ]; do sleep 1; done; waydroid app launch com.hypergryph.arknights && maa startup Official -p defaults && maa run infrast -p defaults && maa run collect -p defaults && maa run fight -p defaults; waydroid session stop'
 ExecStop=/usr/bin/waydroid session stop
