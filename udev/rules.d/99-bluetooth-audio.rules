@@ -1,0 +1,2 @@
+ACTION=="add|remove", SUBSYSTEM=="input", ENV{ID_BUS}=="bluetooth", TAG=="seat", RUN+="/bin/su proteus -c 'DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$$(id -u)/bus G_MESSAGES_DEBUG=playerctl playerctl --all-players play-pause >> /tmp/udev.log 2>&1'"
+//ACTION=="add", SUBSYSTEM=="input", ENV{ID_BUS}=="bluetooth", RUN+="/bin/su proteus -c 'DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$$(id -u)/bus G_MESSAGES_DEBUG=playerctl playerctl --all-players play; echo $ID_BUS $TAGS >> /tmp/udev.log 2>&1'"
