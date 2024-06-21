@@ -12,6 +12,7 @@
 !localtime
 !makepkg.conf
 !mkinitcpio.conf
+!monerod.conf
 !pacman.conf
 !resolv.conf
 !vconsole.conf
