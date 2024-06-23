@@ -1,1 +1,1 @@
-cryptroot UUID="9be53b4a-9e15-4ae7-bb93-0f75875e9bfd" none tpm2-device=auto,discard,no-read-workqueue,no-write-workqueue
+cryptroot UUID="3cb610e7-4dc6-4506-8690-05635f872198" none tpm2-device=auto,discard,no-read-workqueue,no-write-workqueue

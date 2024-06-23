@@ -40,6 +40,8 @@
 !ly/wsetup.sh
 !mkinitcpio.d/
 !mkinitcpio.d/*
+!modprobe.d/
+!modprobe.d/*
 !pacman.d/
 !pacman.d/mirrorlist
 !pacman.d/hooks
@@ -58,15 +60,14 @@
 !systemd/resolved.conf.d/
 !systemd/resolved.conf.d/dns_over_tls.conf
 !systemd/system/
-!systemd/system/custom-sleep-actions.service
-!systemd/system/custom-sleep-actions@.service
+!systemd/system/aria2cd@.service
 !systemd/system/enable-console-blanking.service
-!systemd/system/maa@.service
-!systemd/system/maa@.timer
 !systemd/system/iwd.service.d/
 !systemd/system/iwd.service.d/override.conf
 !systemd/system/ly.service.d/
 !systemd/system/ly.service.d/override.conf
+!systemd/system/monerod.service.d/
+!systemd/system/monerod.service.d/override.conf
 !systemd/system/systemd-networkd-wait-online.service.d/
 !systemd/system/systemd-networkd-wait-online.service.d/override.conf
 !systemd/system/-.slice.d/

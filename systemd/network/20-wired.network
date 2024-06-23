@@ -1,5 +1,6 @@
 [Match]
-Name=enp197s0f*u1u1
+#Path=pci-0000:02:00.0
+MACAddress=D8:CB:8A:97:BE:33
 
 [Network]
 DHCP=yes
