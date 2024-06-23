@@ -42,6 +42,7 @@
 !mkinitcpio.d/*
 !modprobe.d/
 !modprobe.d/*
+!monerod.conf
 !pacman.d/
 !pacman.d/mirrorlist
 !pacman.d/hooks
@@ -68,6 +69,8 @@
 !systemd/system/ly.service.d/override.conf
 !systemd/system/monerod.service.d/
 !systemd/system/monerod.service.d/override.conf
+!systemd/system/smb.service.d/
+!systemd/system/smb.service.d/override.conf
 !systemd/system/systemd-networkd-wait-online.service.d/
 !systemd/system/systemd-networkd-wait-online.service.d/override.conf
 !systemd/system/-.slice.d/
