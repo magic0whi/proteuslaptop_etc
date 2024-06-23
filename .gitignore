@@ -44,8 +44,6 @@
 !pacman.d/mirrorlist
 !pacman.d/hooks
 !pacman.d/hooks/*
-!samba/
-!samba/smb.conf
 !sudoers.d/
 !sudoers.d/*
 !sysctl.d/
@@ -59,7 +57,6 @@
 !systemd/resolved.conf.d/dns_over_tls.conf
 !systemd/system/
 !systemd/system/custom-sleep-actions.service
-!systemd/system/custom-sleep-actions@.service
 !systemd/system/enable-console-blanking.service
 !systemd/system/maa@.service
 !systemd/system/maa@.timer
