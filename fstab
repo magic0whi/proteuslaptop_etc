@@ -18,3 +18,6 @@ UUID=89209d7b-bde0-4169-b92e-7b1dd3cbe1bf /.snapshots btrfs rw,relatime,compress
 UUID=89209d7b-bde0-4169-b92e-7b1dd3cbe1bf /var/log    btrfs rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@var_log 0 0
 
 /.snapshots/swapfile none swap defaults 0 0
+
+# Samba (LAN)
+//proteusdesktop/storage3 /mnt/smb_share cifs nofail,credentials=/home/proteus/sync-work/3keys/proteus.smb,rw,relatime,vers=3.1.1,cache=strict,uid=1000,noforceuid,gid=1000,noforcegid,file_mode=0644,dir_mode=0755,iocharset=utf8,soft,nounix,serverino,mapposix,reparse=nfs,rsize=4194304,wsize=4194304,bsize=1048576,retrans=1,echo_interval=60,actimeo=1,closetimeo=1 0 0
