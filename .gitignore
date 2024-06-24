@@ -1,6 +1,5 @@
 *
 
-# Files Start
 !.etckeeper
 !.gitignore
 !asound.conf
@@ -12,7 +11,9 @@
 !locale.conf
 !localtime
 !makepkg.conf
+!mdadm.conf
 !mkinitcpio.conf
+!monerod.conf
 !pacman.conf
 !resolv.conf
 !vconsole.conf
@@ -42,7 +43,6 @@
 !mkinitcpio.d/*
 !modprobe.d/
 !modprobe.d/*
-!monerod.conf
 !pacman.d/
 !pacman.d/mirrorlist
 !pacman.d/hooks
