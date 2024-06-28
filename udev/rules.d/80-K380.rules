@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="hidraw", KERNEL=="hidraw*", SUBSYSTEMS=="hid", KERNELS=="*:046D:B342.*", RUN+="/usr/bin/sh -c 'hid=$$(grep -FH K380 /sys/class/hidraw/hidraw*/device/uevent | grep -o \"hidraw[0-9][0-9]*\") && [ -n \"$$hid\" ] && printf \"\x10\xff\x0b\x1e\x00\x00\x00\" > \"/dev/$$hid\" || true'"
