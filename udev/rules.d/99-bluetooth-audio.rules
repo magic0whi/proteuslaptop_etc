@@ -1,2 +1,0 @@
-ACTION=="remove", SUBSYSTEM=="input", ENV{ID_BUS}=="bluetooth", TAG=="seat", RUN+="/bin/su proteus -c 'DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$$(id -u)/bus playerctl --all-players pause'"
-ACTION=="add", SUBSYSTEM=="input", ENV{ID_BUS}=="bluetooth", TAG=="seat", RUN+="/bin/su proteus -c 'sleep 2; export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$$(id -u)/bus; /etc/custom_files/wireplumber_set_bluez_default.sh; playerctl --all-players play'"

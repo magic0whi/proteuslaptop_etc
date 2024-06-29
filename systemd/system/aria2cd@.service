@@ -8,7 +8,9 @@ Wants=network-online.target
 
 [Service]
 Type=forking
+User=%i
 ExecStart=/usr/bin/aria2c --conf-path=/mnt/storage3/aria2/config/aria2.conf
+ExecReload=/usr/bin/kill -HUP $MAINPID
 
 [Install]
 WantedBy=multi-user.target
