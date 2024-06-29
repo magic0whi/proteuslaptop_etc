@@ -62,6 +62,8 @@
 !systemd/system/xmrig.timer
 !systemd/system/xmrig-stop.service
 !systemd/system/xmrig-stop.timer
+!systemd/system/yggdrasil.service.d/
+!systemd/system/yggdrasil.service.d/override.conf
 !systemd/timesyncd.conf
 !systemd/zram-generator.conf
 !udev/
